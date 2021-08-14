@@ -10,7 +10,7 @@ faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_car.xml
 
 
 image = cv2.imread(imagePath)
-#print(f"img: {image}")
+#print(f"img: {image}")    
 
 #if image == None: 
 #    raise Exception("could not load image !")
@@ -22,7 +22,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 
 
-faces= faceCascade.detectMultiScale( gray) 
+faces= faceCascade.detectMultiScale( image) 
 
 print("I found {0} cars!".format(len(faces)))
 

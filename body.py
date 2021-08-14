@@ -4,7 +4,7 @@ import sys
 imagePath = sys.argv[1]
 
 
-faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fullbody.xml')
 
 #print(f"face: {faceCascade}")
 
@@ -25,7 +25,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 
 
-faces= faceCascade.detectMultiScale( gray,1.1,4) 
+faces= faceCascade.detectMultiScale( gray) 
 
 print("I found {0} faces!".format(len(faces)))
 

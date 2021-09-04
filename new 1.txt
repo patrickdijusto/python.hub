@@ -1,0 +1,5 @@
+import requests
+import json
+api-key = "379cc2199c9729cadf8280cba0c522c5"
+base-url = "http://apiopenweathermap.org/data/2.5/weather?"
+city-name
